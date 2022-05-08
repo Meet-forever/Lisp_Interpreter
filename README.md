@@ -6,7 +6,7 @@ When a user writes an input, it first goes to Lexical Analyzer, i.e., LISPLexer,
 
 Then, it goes to the parsing stage inside the LISPParser, where it recursively checks whether the given input is semantically correct or not, and if there are no grammatical mistakes, it generates an AST. So, at this stage, we know that the input is syntactically valid.
 
-The AST tree is used for applying functions and operations.
+The AST tree is used for applying the functions and operations.
 
 ### Available Comparison Operations:
 ```
@@ -38,7 +38,7 @@ not : Logical not operator
 (cdr List) : 
     input := List
     output := List
-    operation:= remove head element of the list
+    operation:= removes the head element of the list
 
 (cons expression List) :
     input := LISP Expression and List
@@ -46,7 +46,7 @@ not : Logical not operator
     operation:= adds Lisp Expression to the head of the list 
 ```
 
-Sample Run:
+### Sample Run:
 ```bash
 LISP: (> 3 4);  
 False
